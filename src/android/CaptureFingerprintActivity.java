@@ -185,13 +185,4 @@ public class CaptureFingerprintActivity extends Activity {
 	        }
 	    }).start();    
     }
-
-    // called when orientation has changed to manually destroy and recreate activity
-    @Override 
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-    	setContentView(R.layout.activity_capture_stream);     
-    	
-    	initializeActivity();
-    }
 }
