@@ -34,14 +34,15 @@ public class Digital extends CordovaPlugin {
     
     @Override
     public boolean execute(String action, JSONArray args, final CallbackContext newCallbackContext) {
+        // este log se ve en el android monitor ya que es nativo
         Log.i(TAG, "execute");
 
         Context context = cordova.getActivity().getApplicationContext();
 
-        if ("capturar".equals(action)) {
+        if ("conectar".equals(action)) {
             callbackContext = newCallbackContext;
             cordova.setActivityResultCallback (this);
-
+            // este log se ve en el android monitor ya que es nativo
             Log.i(TAG,"ENTRO");
             return true;
         }
