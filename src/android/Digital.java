@@ -7,9 +7,6 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 
-import com.digitalpersona.uareu.ReaderCollection;
-import com.digitalpersona.uareu.UareUException;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
