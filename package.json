@@ -1,0 +1,27 @@
+{
+    "name": "intentplugin",
+    "version": "0.0.1",
+    "description": "Plugin para detectar huellero.",
+    "cordova": {
+      "id": "intentplugin",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Ggomezr/PluginDigital.git"
+    },
+    "keywords": [
+      "Toast"    
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=3.0.0"
+      }
+    ],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://github.com/Ggomezr/PluginDigital"
+  }

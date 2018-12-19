@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cl.entel.plugins.digitalpersona" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <name>digital</name>
+
+  <js-module name="Digital" src="www/digital.js">
+    <clobbers target="digital" />
+  </js-module>
+
+  <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
+
+  <platform name="android">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="Digital">
+        <param name="android-package" value="cl.entel.plugins.digitalpersona"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Digital.java" target-dir="src/cl/entel/plugins/digitalpersona" />
+    <source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
+
+    <framework src="src/android/file.gradle" custom="true" type="gradleReference" />
+    
+    <resource-file src="aar/zymorpholib_v1-release.aar" target="libs/zymorpholib_v1-release.aar"/>
+  
+  </platform>
+</plugin>

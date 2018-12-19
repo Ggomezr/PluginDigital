@@ -35,8 +35,11 @@ public class CaptureFingerprintActivity extends Activity {
 	
 	private void initializeActivity()
 	{
-        m_title = (TextView) findViewById(R.id.title);     
+		// titulo: DigitalPersona U ar....
+        m_title = (TextView) findViewById(R.id.title);    
+		// esta linea se borra 
         m_title.setText("Capture");
+		// indica la ruta
         m_selectedDevice = (TextView) findViewById(R.id.selected_device);
         m_sn = getIntent().getExtras().getString("serial_number");        
         m_deviceName = getIntent().getExtras().getString("device_name");
