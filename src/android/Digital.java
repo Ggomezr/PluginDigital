@@ -46,7 +46,6 @@ public class Digital extends CordovaPlugin {
 
             Log.i(TAG,"ENTRO");
 
-
             return true;
         }
 
