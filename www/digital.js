@@ -1,21 +1,15 @@
-var huellero = {
+var digital = {
     conectar: function (success, error) {
         var options = {};
-        cordova.exec(success, error, 'Huellero', 'conectar', [options]);
-    },
-    capturar: function (success, error) {
-      var options = {};
-      cordova.exec(success, error, 'Huellero', 'capturar', [options]);
-    }
-    
+        cordova.exec(success, error, 'Digital', 'conectar', [options]);
+    }    
   }
   
-  //NO TOCAR, SOLO INSTALACION
   cordova.addConstructor(function () {
     if (!window.plugins) {
       window.plugins = {};
     }
   
-    window.plugins.huellero = huellero;
-    return window.plugins.huellero;
+    window.plugins.digital = digital;
+    return window.plugins.digital;
   });

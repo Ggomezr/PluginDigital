@@ -18,11 +18,7 @@
     </config-file>
 
     <source-file src="src/android/Digital.java" target-dir="src/cl/entel/plugins/digitalpersona" />
-    <source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
 
-    <framework src="src/android/file.gradle" custom="true" type="gradleReference" />
-    
-    <resource-file src="aar/zymorpholib_v1-release.aar" target="libs/zymorpholib_v1-release.aar"/>
-  
+      
   </platform>
 </plugin>
