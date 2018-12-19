@@ -18,6 +18,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import android.util.Log;
+
 import android.content.Context;
 
 public class Digital extends CordovaPlugin {
@@ -29,7 +31,6 @@ public class Digital extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
     }
-
     
     @Override
     public boolean execute(String action, JSONArray args, final CallbackContext newCallbackContext) {
@@ -42,7 +43,6 @@ public class Digital extends CordovaPlugin {
             cordova.setActivityResultCallback (this);
 
             Log.i(TAG,"ENTRO");
-
             return true;
         }
 
