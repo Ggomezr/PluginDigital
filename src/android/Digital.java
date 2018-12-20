@@ -42,6 +42,11 @@ public class Digital extends CordovaPlugin {
         if ("conectar".equals(action)) {
             callbackContext = newCallbackContext;
             cordova.setActivityResultCallback (this);
+
+            // determina si el plugin devuelve una respuesta correcta
+            PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
+            callbackContext.sendPluginResult(pluginResult);
+
             // este log se ve en el android monitor ya que es nativo
             Log.i(TAG,"ENTRO");
             return true;
@@ -51,5 +56,4 @@ public class Digital extends CordovaPlugin {
         Log.i(TAG, "error");
         return false;
     }
-
 }
