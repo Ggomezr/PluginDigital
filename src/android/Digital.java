@@ -23,7 +23,7 @@ import android.util.Log;
 import android.content.Context;
 
 public class Digital extends CordovaPlugin {
-    private static final String TAG = "DigitalPerson huellero";
+    private static final String TAG = "DigitalPerson";
     private byte[] byteArray;
     private CallbackContext callbackContext = null;
     
