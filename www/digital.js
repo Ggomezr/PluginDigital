@@ -1,7 +1,8 @@
 var digital = {
     conectar: function (success, error) {
-      console.log("construtor");
         var options = {};
+        console.log(success, error, 'Digital', 'conectar', [options]);
+
         cordova.exec(success, error, 'Digital', 'conectar', [options]);
     }    
   }
