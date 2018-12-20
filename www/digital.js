@@ -1,5 +1,6 @@
 var digital = {
     conectar: function (success, error) {
+      console.log("construtor");
         var options = {};
         cordova.exec(success, error, 'Digital', 'conectar', [options]);
     }    
@@ -9,7 +10,6 @@ var digital = {
     if (!window.plugins) {
       window.plugins = {};
     }
-    console.log("construtor");
   
     window.plugins.digital = digital;
     return window.plugins.digital;
