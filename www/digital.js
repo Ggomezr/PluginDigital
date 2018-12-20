@@ -7,6 +7,7 @@ var digital = {
   
   cordova.addConstructor(function () {
     if (!window.plugins) {
+      console.log("construtor");
       window.plugins = {};
     }
   
